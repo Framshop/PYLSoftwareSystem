@@ -92,7 +92,7 @@ namespace PYLsystems
 
         private void LoginForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (!LogInMatch) { 
+            if (!LogInMatch) {
                 Application.Exit();
             }
         }
