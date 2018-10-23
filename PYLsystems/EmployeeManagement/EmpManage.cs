@@ -16,5 +16,15 @@ namespace PYLsystems
         {
             InitializeComponent();
         }
+
+        private void EmpManage_Load(object sender, EventArgs e)
+        {
+           // this.IsMdiContainer = MainForm;
+        }
+
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

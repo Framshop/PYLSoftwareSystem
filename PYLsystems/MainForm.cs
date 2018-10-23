@@ -20,10 +20,10 @@ namespace PYLsystems
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            this.IsMdiContainer = true;
-            LoginForm loginForm = new LoginForm();
-            loginForm.ShowDialog();
-            this.employeeStatus = loginForm.employeeStatus;
+            //this.IsMdiContainer = true;
+            //LoginForm loginForm = new LoginForm();
+            //loginForm.ShowDialog();
+            //this.employeeStatus = loginForm.employeeStatus;
             /*this.accountId = loginForm.accountId;
             if (accountType == null)
             {
@@ -35,6 +35,19 @@ namespace PYLsystems
                 menuStrip.ShowItemToolTips = true;
             }*/
 
+        }
+
+        private void empManButtton_Click(object sender, EventArgs e)
+        {
+            EmpManage empManageForm = new EmpManage();
+            mainWindow(empManageForm,content);
+        }
+        //Single Window interface. No opening of new window other than login
+        public void mainWindow(Form form, Panel content) {
+            form.TopLevel = false;
+            content.Controls.Clear();
+            content.Controls.Add(form);
+            form.Show();
         }
     }
 }

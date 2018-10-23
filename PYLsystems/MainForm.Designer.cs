@@ -32,6 +32,8 @@
             this.salesButton = new System.Windows.Forms.Button();
             this.inventButton = new System.Windows.Forms.Button();
             this.settings = new System.Windows.Forms.Button();
+            this.content = new System.Windows.Forms.Panel();
+            this.content.SuspendLayout();
             this.SuspendLayout();
             // 
             // empManButtton
@@ -44,6 +46,7 @@
             this.empManButtton.TabIndex = 0;
             this.empManButtton.Text = "Employee Management";
             this.empManButtton.UseVisualStyleBackColor = true;
+            this.empManButtton.Click += new System.EventHandler(this.empManButtton_Click);
             // 
             // salesButton
             // 
@@ -70,12 +73,23 @@
             // settings
             // 
             this.settings.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.settings.Location = new System.Drawing.Point(677, 720);
+            this.settings.Location = new System.Drawing.Point(670, 720);
             this.settings.Name = "settings";
             this.settings.Size = new System.Drawing.Size(83, 75);
             this.settings.TabIndex = 3;
             this.settings.Text = "Settings";
             this.settings.UseVisualStyleBackColor = true;
+            // 
+            // content
+            // 
+            this.content.Controls.Add(this.settings);
+            this.content.Controls.Add(this.empManButtton);
+            this.content.Controls.Add(this.inventButton);
+            this.content.Controls.Add(this.salesButton);
+            this.content.Location = new System.Drawing.Point(20, 18);
+            this.content.Name = "content";
+            this.content.Size = new System.Drawing.Size(759, 809);
+            this.content.TabIndex = 10;
             // 
             // MainForm
             // 
@@ -83,13 +97,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(798, 844);
-            this.Controls.Add(this.settings);
-            this.Controls.Add(this.inventButton);
-            this.Controls.Add(this.salesButton);
-            this.Controls.Add(this.empManButtton);
+            this.Controls.Add(this.content);
             this.Name = "MainForm";
             this.Text = "PYL Green Software System";
             this.Load += new System.EventHandler(this.MainForm_Load);
+            this.content.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -100,6 +112,7 @@
         private System.Windows.Forms.Button salesButton;
         private System.Windows.Forms.Button inventButton;
         private System.Windows.Forms.Button settings;
+        private System.Windows.Forms.Panel content;
     }
 }
 

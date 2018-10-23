@@ -33,11 +33,13 @@
             this.attendButton = new System.Windows.Forms.Button();
             this.empListButton = new System.Windows.Forms.Button();
             this.backButton = new System.Windows.Forms.Button();
+            this.content = new System.Windows.Forms.Panel();
+            this.content.SuspendLayout();
             this.SuspendLayout();
             // 
             // settings
             // 
-            this.settings.Location = new System.Drawing.Point(677, 720);
+            this.settings.Location = new System.Drawing.Point(651, 701);
             this.settings.Name = "settings";
             this.settings.Size = new System.Drawing.Size(83, 75);
             this.settings.TabIndex = 7;
@@ -79,6 +81,15 @@
             this.backButton.TabIndex = 8;
             this.backButton.Text = "←";
             this.backButton.UseVisualStyleBackColor = true;
+            this.backButton.Click += new System.EventHandler(this.backButton_Click);
+            // 
+            // content
+            // 
+            this.content.Controls.Add(this.settings);
+            this.content.Location = new System.Drawing.Point(20, 18);
+            this.content.Name = "content";
+            this.content.Size = new System.Drawing.Size(759, 809);
+            this.content.TabIndex = 9;
             // 
             // EmpManage
             // 
@@ -87,12 +98,15 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(798, 844);
             this.Controls.Add(this.backButton);
-            this.Controls.Add(this.settings);
             this.Controls.Add(this.payrollButton);
             this.Controls.Add(this.attendButton);
             this.Controls.Add(this.empListButton);
+            this.Controls.Add(this.content);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "EmpManage";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "PYL Green Software System > Employee Management";
+            this.content.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -104,5 +118,6 @@
         private System.Windows.Forms.Button attendButton;
         private System.Windows.Forms.Button empListButton;
         private System.Windows.Forms.Button backButton;
+        private System.Windows.Forms.Panel content;
     }
 }
