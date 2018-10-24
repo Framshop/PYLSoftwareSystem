@@ -19,7 +19,6 @@ C:\Users\Work-PCQ\Desktop\My Local Files\School\2018-2019\2nd Sem\SoftEng\C#\PYL
 C:\Users\Work-PCQ\Desktop\My Local Files\School\2018-2019\2nd Sem\SoftEng\C#\PYLSoftwareSystem\PYLSoftwareSystem\PYLsystems\bin\Debug\MySql.Data.dll
 C:\Users\Work-PCQ\Desktop\My Local Files\School\2018-2019\2nd Sem\SoftEng\C#\PYLSoftwareSystem\PYLSoftwareSystem\PYLsystems\bin\Debug\MySql.Data.xml
 C:\Users\Work-PCQ\Desktop\My Local Files\School\2018-2019\2nd Sem\SoftEng\C#\PYLSoftwareSystem\PYLSoftwareSystem\PYLsystems\obj\Debug\PYLSystems.csprojResolveAssemblyReference.cache
-C:\Users\Work-PCQ\Desktop\My Local Files\School\2018-2019\2nd Sem\SoftEng\C#\PYLSoftwareSystem\PYLSoftwareSystem\PYLsystems\obj\Debug\PYLsystems.EmpManage.resources
 C:\Users\Work-PCQ\Desktop\My Local Files\School\2018-2019\2nd Sem\SoftEng\C#\PYLSoftwareSystem\PYLSoftwareSystem\PYLsystems\obj\Debug\PYLsystems.LoginForm.resources
 C:\Users\Work-PCQ\Desktop\My Local Files\School\2018-2019\2nd Sem\SoftEng\C#\PYLSoftwareSystem\PYLSoftwareSystem\PYLsystems\obj\Debug\PYLsystems.MainForm.resources
 C:\Users\Work-PCQ\Desktop\My Local Files\School\2018-2019\2nd Sem\SoftEng\C#\PYLSoftwareSystem\PYLSoftwareSystem\PYLsystems\obj\Debug\PYLsystems.Properties.Resources.resources
@@ -28,3 +27,5 @@ C:\Users\Work-PCQ\Desktop\My Local Files\School\2018-2019\2nd Sem\SoftEng\C#\PYL
 C:\Users\Work-PCQ\Desktop\My Local Files\School\2018-2019\2nd Sem\SoftEng\C#\PYLSoftwareSystem\PYLSoftwareSystem\PYLsystems\obj\Debug\PYLSystems.csproj.CopyComplete
 C:\Users\Work-PCQ\Desktop\My Local Files\School\2018-2019\2nd Sem\SoftEng\C#\PYLSoftwareSystem\PYLSoftwareSystem\PYLsystems\obj\Debug\PYLsystems.exe
 C:\Users\Work-PCQ\Desktop\My Local Files\School\2018-2019\2nd Sem\SoftEng\C#\PYLSoftwareSystem\PYLSoftwareSystem\PYLsystems\obj\Debug\PYLsystems.pdb
+C:\Users\Work-PCQ\Desktop\My Local Files\School\2018-2019\2nd Sem\SoftEng\C#\PYLSoftwareSystem\PYLSoftwareSystem\PYLsystems\obj\Debug\PYLsystems.EmpManControl.resources
+C:\Users\Work-PCQ\Desktop\My Local Files\School\2018-2019\2nd Sem\SoftEng\C#\PYLSoftwareSystem\PYLSoftwareSystem\PYLsystems\obj\Debug\PYLsystems.HomeControl.resources

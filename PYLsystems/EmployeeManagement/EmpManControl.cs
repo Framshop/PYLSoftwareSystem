@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,21 +10,18 @@ using System.Windows.Forms;
 
 namespace PYLsystems
 {
-    public partial class EmpManage : Form
+    public partial class EmpManControl : UserControl
     {
-        public EmpManage()
+        MainForm parentForm;
+        public EmpManControl(MainForm parent)
         {
             InitializeComponent();
-        }
-
-        private void EmpManage_Load(object sender, EventArgs e)
-        {
-           // this.IsMdiContainer = MainForm;
+            this.parentForm = parent;
         }
 
         private void backButton_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.parentForm.homeControl_Load(this);
         }
     }
 }

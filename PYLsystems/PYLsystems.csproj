@@ -46,11 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EmployeeManagement\EmpManage.cs">
-      <SubType>Form</SubType>
+    <Compile Include="EmployeeManagement\EmpManControl.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="EmployeeManagement\EmpManage.Designer.cs">
-      <DependentUpon>EmpManage.cs</DependentUpon>
+    <Compile Include="EmployeeManagement\EmpManControl.Designer.cs">
+      <DependentUpon>EmpManControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomeControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HomeControl.Designer.cs">
+      <DependentUpon>HomeControl.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
@@ -66,8 +72,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="EmployeeManagement\EmpManage.resx">
-      <DependentUpon>EmpManage.cs</DependentUpon>
+    <EmbeddedResource Include="EmployeeManagement\EmpManControl.resx">
+      <DependentUpon>EmpManControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeControl.resx">
+      <DependentUpon>HomeControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
