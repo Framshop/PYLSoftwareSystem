@@ -46,6 +46,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EmployeeManagement\addEmpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeManagement\addEmpForm.Designer.cs">
+      <DependentUpon>addEmpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeManagement\addEmployeeInstance.cs" />
+    <Compile Include="EmployeeManagement\addUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeManagement\addUserForm.Designer.cs">
+      <DependentUpon>addUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeManagement\EmployeeList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EmployeeManagement\EmployeeList.Designer.cs">
+      <DependentUpon>EmployeeList.cs</DependentUpon>
+    </Compile>
     <Compile Include="EmployeeManagement\EmpManControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -72,6 +91,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="EmployeeManagement\addEmpForm.resx">
+      <DependentUpon>addEmpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeManagement\addUserForm.resx">
+      <DependentUpon>addUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeManagement\EmployeeList.resx">
+      <DependentUpon>EmployeeList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EmployeeManagement\EmpManControl.resx">
       <DependentUpon>EmpManControl.cs</DependentUpon>
     </EmbeddedResource>

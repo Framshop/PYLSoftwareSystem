@@ -8,12 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PYLsystems
+namespace PYLsystems.EmployeeManagement
 {
-    public partial class EmpManControl : UserControl
+    public partial class EmployeeList : UserControl
     {
         MainForm parentForm;
-        public EmpManControl(MainForm parent)
+        public EmployeeList(MainForm parent)
         {
             InitializeComponent();
             this.parentForm = parent;
@@ -22,12 +22,12 @@ namespace PYLsystems
 
         private void backButton_Click(object sender, EventArgs e)
         {
-            this.parentForm.homeControl_Load(this);
+            this.parentForm.empManControl_Load(this);
         }
 
-        private void empListButtton_Click(object sender, EventArgs e)
+        private void addEmpButton_Click(object sender, EventArgs e)
         {
-            this.parentForm.empListControl_Load(this);
+            addEmployeeInstance newEmployee = new addEmployeeInstance(this);
         }
     }
 }

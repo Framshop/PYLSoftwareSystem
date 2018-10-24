@@ -17,6 +17,9 @@ namespace PYLsystems
         {
             InitializeComponent();
             this.parentForm = parent;
+            this.Dock = DockStyle.Fill;
+            //this.Anchor = (AnchorStyles.Top| AnchorStyles.Left| AnchorStyles.Right);
+            //this.tableLayout.Dock = DockStyle.Fill;
         }
 
         private void empManButtton_Click(object sender, EventArgs e)

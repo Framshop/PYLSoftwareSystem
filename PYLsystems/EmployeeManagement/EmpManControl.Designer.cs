@@ -33,11 +33,13 @@
             this.settings = new System.Windows.Forms.Button();
             this.attendButton = new System.Windows.Forms.Button();
             this.payrollButton = new System.Windows.Forms.Button();
+            this.empManPanel = new System.Windows.Forms.Panel();
+            this.empManPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // backButton
             // 
-            this.backButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.backButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.backButton.Location = new System.Drawing.Point(44, 24);
             this.backButton.Name = "backButton";
             this.backButton.Size = new System.Drawing.Size(83, 75);
@@ -48,18 +50,18 @@
             // 
             // empListButtton
             // 
-            this.empListButtton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.empListButtton.Location = new System.Drawing.Point(215, 124);
+            this.empListButtton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.empListButtton.Location = new System.Drawing.Point(215, 128);
             this.empListButtton.Name = "empListButtton";
             this.empListButtton.Size = new System.Drawing.Size(368, 81);
             this.empListButtton.TabIndex = 10;
             this.empListButtton.Text = "Employees List";
             this.empListButtton.UseVisualStyleBackColor = true;
+            this.empListButtton.Click += new System.EventHandler(this.empListButtton_Click);
             // 
             // settings
             // 
-            this.settings.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.settings.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.settings.Location = new System.Drawing.Point(671, 711);
             this.settings.Name = "settings";
             this.settings.Size = new System.Drawing.Size(83, 75);
@@ -69,8 +71,7 @@
             // 
             // attendButton
             // 
-            this.attendButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.attendButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.attendButton.Location = new System.Drawing.Point(215, 323);
             this.attendButton.Name = "attendButton";
             this.attendButton.Size = new System.Drawing.Size(368, 81);
@@ -80,8 +81,7 @@
             // 
             // payrollButton
             // 
-            this.payrollButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.payrollButton.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.payrollButton.Location = new System.Drawing.Point(215, 529);
             this.payrollButton.Name = "payrollButton";
             this.payrollButton.Size = new System.Drawing.Size(368, 81);
@@ -89,17 +89,27 @@
             this.payrollButton.Text = "Payroll";
             this.payrollButton.UseVisualStyleBackColor = true;
             // 
+            // empManPanel
+            // 
+            this.empManPanel.Controls.Add(this.backButton);
+            this.empManPanel.Controls.Add(this.attendButton);
+            this.empManPanel.Controls.Add(this.empListButtton);
+            this.empManPanel.Controls.Add(this.payrollButton);
+            this.empManPanel.Controls.Add(this.settings);
+            this.empManPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.empManPanel.Location = new System.Drawing.Point(0, 0);
+            this.empManPanel.Name = "empManPanel";
+            this.empManPanel.Size = new System.Drawing.Size(798, 844);
+            this.empManPanel.TabIndex = 15;
+            // 
             // EmpManControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.backButton);
-            this.Controls.Add(this.empListButtton);
-            this.Controls.Add(this.settings);
-            this.Controls.Add(this.attendButton);
-            this.Controls.Add(this.payrollButton);
+            this.Controls.Add(this.empManPanel);
             this.Name = "EmpManControl";
             this.Size = new System.Drawing.Size(798, 844);
+            this.empManPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -111,5 +121,6 @@
         private System.Windows.Forms.Button settings;
         private System.Windows.Forms.Button attendButton;
         private System.Windows.Forms.Button payrollButton;
+        private System.Windows.Forms.Panel empManPanel;
     }
 }

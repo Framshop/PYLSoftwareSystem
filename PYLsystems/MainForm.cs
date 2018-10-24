@@ -12,8 +12,6 @@ namespace PYLsystems
 {
     public partial class MainForm : Form
     {
-        private static MainForm useMainWindow = null;
-        private static readonly object safeLock = new object();
         private int employeeStatus; //type of account based on database. 1 - admin programmer/owner, 2 - manager, 3 - cashier, 4 - framer.
         public MainForm()
         {
@@ -21,32 +19,44 @@ namespace PYLsystems
         }
         private void MainForm_Load(object sender, EventArgs e)
         {
+            LoginForm loginForm = new LoginForm();
+            loginForm.ShowDialog();
+            this.employeeStatus = loginForm.employeeStatus;
             homeControl_Load();
 
         }
-        public void homeControl_Load()
+        private void homeControl_Load() //initial load
         {
             HomeControl homeControl = new HomeControl(this);
             mainWindow(homeControl);
         }
-        public void homeControl_Load(UserControl oldControl)
+        //for controls
+        internal void homeControl_Load(UserControl oldControl)
         {
             HomeControl homeControl = new HomeControl(this);
             mainWindow(homeControl);
             oldControl.Dispose();
         }
-        public void empManControl_Load(UserControl oldControl)
+        internal void empManControl_Load(UserControl oldControl)
         {
             EmpManControl empManageControl = new EmpManControl(this);
             mainWindow(empManageControl);
             oldControl.Dispose();
 
         }
-        public void mainWindow(UserControl newUserControl) {
+        internal void empListControl_Load(UserControl oldControl)
+        {
+            EmployeeManagement.EmployeeList emplist = new EmployeeManagement.EmployeeList(this);
+            mainWindow(emplist);
+            oldControl.Dispose();
+
+        }
+        //Single Window interface. No opening of new window other than login
+        private void mainWindow(UserControl newUserControl) {
             this.content.Controls.Clear();    
             this.content.Controls.Add(newUserControl);
         }
-        //Single Window interface. No opening of new window other than login
+        
         //public void mainWindow(Form newForm, Form oldForm)
         //oldControl.Dispose();
         //{
