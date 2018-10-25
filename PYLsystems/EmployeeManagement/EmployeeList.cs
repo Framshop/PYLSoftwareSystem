@@ -28,6 +28,7 @@ namespace PYLsystems.EmployeeManagement
         private void addEmpButton_Click(object sender, EventArgs e)
         {
             addEmployeeInstance newEmployee = new addEmployeeInstance(this);
+            newEmployee.employeeListBoot();
         }
     }
 }

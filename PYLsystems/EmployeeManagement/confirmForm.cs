@@ -10,14 +10,11 @@ using System.Windows.Forms;
 
 namespace PYLsystems.EmployeeManagement
 {
-    public partial class addUserForm : Form
+    public partial class confirmForm : Form
     {
-        addEmployeeInstance parentInstance;
-        public addUserForm(addEmployeeInstance parent)
+        public confirmForm()
         {
             InitializeComponent();
-            this.parentInstance = parent;
-
         }
     }
 }

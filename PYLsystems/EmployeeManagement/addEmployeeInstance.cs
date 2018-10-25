@@ -14,10 +14,11 @@ namespace PYLsystems.EmployeeManagement
         {
             this.parentForm = parent;
         }
-        internal void controller()// first start up run
+        internal void employeeListBoot()//running from Add Employee
         {
+            openAddEmployeeForm();
         }
-        internal void preparation()// handles closing and opening of forms
+        internal void handlingAddEmployeeForms()//handles form Transition
         {
         }
         //Form opener methods

@@ -59,6 +59,12 @@
     <Compile Include="EmployeeManagement\addUserForm.Designer.cs">
       <DependentUpon>addUserForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="EmployeeManagement\confirmForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeManagement\confirmForm.Designer.cs">
+      <DependentUpon>confirmForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="EmployeeManagement\EmployeeList.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -96,6 +102,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EmployeeManagement\addUserForm.resx">
       <DependentUpon>addUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeManagement\confirmForm.resx">
+      <DependentUpon>confirmForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EmployeeManagement\EmployeeList.resx">
       <DependentUpon>EmployeeList.cs</DependentUpon>
