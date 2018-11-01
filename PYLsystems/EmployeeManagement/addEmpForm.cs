@@ -12,6 +12,9 @@ namespace PYLsystems.EmployeeManagement
 {
     public partial class addEmpForm : Form
     {
+        public delegate void AddEmployeeInstanceEventHandler(addEmpForm source, EventArgs args);
+        public event AddEmployeeInstanceEventHandler AddEmpInstance;
+
         addEmployeeInstance parentInstance;
         public addEmpForm(addEmployeeInstance parent)
         {           
@@ -21,9 +24,10 @@ namespace PYLsystems.EmployeeManagement
 
         }
 
-        private void nextButton_Click(object sender, EventArgs e)
+        protected virtual void nextButton_Click(object sender, EventArgs e)
         {
-
+            if (AddEmpInstance != null)
+                AddEmpInstance(this, EventArgs.Empty);
         }
     }
 }

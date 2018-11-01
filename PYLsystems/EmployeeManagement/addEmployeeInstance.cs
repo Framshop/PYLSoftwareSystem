@@ -3,33 +3,27 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Windows.Forms;
 namespace PYLsystems.EmployeeManagement
-{
+{   //Add Employee storage handler before passing to database as well handling Add Employee-relatedForms.
     public partial class addEmployeeInstance
     {
-        //Add Employee storage handler before passing to database as well handling Add Employee-relatedForms.
+        addEmpForm addEmployee;
+        addUserForm addUser; 
         EmployeeList parentForm;
         public addEmployeeInstance(EmployeeList parent)
         {
             this.parentForm = parent;
-        }
-        internal void employeeListBoot()//running from Add Employee
-        {
-            openAddEmployeeForm();
-        }
-        internal void handlingAddEmployeeForms()//handles form Transition
-        {
+            addEmployee = new addEmpForm(this);
+            addUser = new addUserForm(this);
         }
         //Form opener methods
-        private void openAddEmployeeForm()
+        public void openAddEmployeeForm(EmployeeList form, EventArgs e) //open from employee list
         {
-            addEmpForm addEmployee = new addEmpForm(this);
             addEmployee.ShowDialog();
         }
-        private void openAddUserForm()
-        {
-            addUserForm addUser = new addUserForm(this);
+        private void openAddUserForm(addEmpForm form, EventArgs e)
+        {         
             addUser.ShowDialog();
         }
         //data storage methods

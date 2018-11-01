@@ -12,12 +12,18 @@ namespace PYLsystems.EmployeeManagement
 {
     public partial class EmployeeList : UserControl
     {
+        public delegate void AddEmployeeInstanceEventHandler(EmployeeList source, EventArgs args);
+        public event AddEmployeeInstanceEventHandler AddEmpInstance;
+
+        addEmployeeInstance newEmployee;
         MainForm parentForm;
+
         public EmployeeList(MainForm parent)
         {
             InitializeComponent();
             this.parentForm = parent;
             this.Dock = DockStyle.Fill;
+            newEmployee = new addEmployeeInstance(this);
         }
 
         private void backButton_Click(object sender, EventArgs e)
@@ -27,8 +33,15 @@ namespace PYLsystems.EmployeeManagement
 
         private void addEmpButton_Click(object sender, EventArgs e)
         {
-            addEmployeeInstance newEmployee = new addEmployeeInstance(this);
-            newEmployee.employeeListBoot();
+            if (AddEmpInstance == null)
+            {
+                AddEmpInstance += newEmployee.openAddEmployeeForm;
+                AddEmpInstance(this, EventArgs.Empty);
+            }
+            else
+            {
+                AddEmpInstance(this, EventArgs.Empty);
+            }
         }
     }
 }

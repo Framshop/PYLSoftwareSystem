@@ -19,9 +19,9 @@ namespace PYLsystems
         }
         private void MainForm_Load(object sender, EventArgs e)
         {
-            LoginForm loginForm = new LoginForm();
-            loginForm.ShowDialog();
-            this.employeeStatus = loginForm.employeeStatus;
+            //LoginForm loginForm = new LoginForm();
+            //loginForm.ShowDialog();
+            //this.employeeStatus = loginForm.employeeStatus;
             homeControl_Load();
 
         }

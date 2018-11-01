@@ -32,3 +32,4 @@ C:\Users\Work-PCQ\Desktop\My Local Files\School\2018-2019\2nd Sem\SoftEng\C#\PYL
 C:\Users\Work-PCQ\Desktop\My Local Files\School\2018-2019\2nd Sem\SoftEng\C#\PYLSoftwareSystem\PYLSoftwareSystem\PYLsystems\obj\Debug\PYLsystems.EmployeeManagement.EmployeeList.resources
 C:\Users\Work-PCQ\Desktop\My Local Files\School\2018-2019\2nd Sem\SoftEng\C#\PYLSoftwareSystem\PYLSoftwareSystem\PYLsystems\obj\Debug\PYLsystems.EmployeeManagement.addEmpForm.resources
 C:\Users\Work-PCQ\Desktop\My Local Files\School\2018-2019\2nd Sem\SoftEng\C#\PYLSoftwareSystem\PYLSoftwareSystem\PYLsystems\obj\Debug\PYLsystems.EmployeeManagement.addUserForm.resources
+C:\Users\Work-PCQ\Desktop\My Local Files\School\2018-2019\2nd Sem\SoftEng\C#\PYLSoftwareSystem\PYLSoftwareSystem\PYLsystems\obj\Debug\PYLsystems.EmployeeManagement.confirmForm.resources
